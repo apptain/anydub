@@ -1,0 +1,101 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+.post {
+  .image {
+    background-position: center;
+    @media (min-width: 576px) {
+      min-height: 15rem;
+    }
+    max-height: 15rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 5.7rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: all 0.5s ease 0s;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    @media (min-width: 576px) {
+      min-height: 15rem;
+    }
+    background-repeat: no-repeat;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-size: cover;
+    min-height: 5.7rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: all 0.5s ease 0s;
+
+    &:hover {
+      opacity: 0.7;
+
+      .data {
+        transform: translateY(-1em);
+        transition: transform 0.3s;
+      }
+    }
+  }
+  
+  .content {
+    @include margin-auto();
+  }
+
+  .footer {
+    max-width: $layout-post-width;
+    @include padding(0, 0.5);
+    @include margin-auto();
+  }
+
+  .comments {
+    max-width: $layout-post-width;
+    @include padding(0, 0.5);
+    @include margin-auto();
+  }
+
+  .button {
+    border: 1px solid $color-gray-border;
+    border-radius: $button-border-radius;
+    color: $color-base;
+    display: block;
+    font-size: $typographic-base-font-size;
+    font-weight: normal;
+    height: $button-height;
+    line-height: $button-height;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90px;
+    text-align: center;
+    @include padding(0, 1);
+    @include margin-top(1);
+
+    &:hover,
+    &:focus {
+      color: $color-primary;
+    }
+  }
+}
+
+@include breakpoint-md {
+  .post {
+    .footer {
+      @include padding-equal(0);
+    }
+
+    .comments {
+      @include padding-equal(0);
+    }
+
+    .button {
+      left: 30px;
+      max-width: none;
+      position: fixed;
+      top: 30px;
+      @include margin-equal(0);
+    }
+  }
+}

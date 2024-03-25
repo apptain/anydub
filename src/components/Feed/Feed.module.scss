@@ -1,0 +1,116 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+.feed {
+  .item {
+    @include margin-bottom(1.25);
+    padding: .33rem 1rem;
+    &:hover {
+      box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+    }
+
+    &:last-child {
+      @include margin-bottom(0.5);
+    }
+
+    .title {
+      font-size: $typographic-base-font-size * 1.6875;
+      @include line-height(1.5);
+      @include margin-top(0);
+      @include margin-bottom(0.5);
+
+      .link {
+        color: $color-base;
+
+        &:hover,
+        &:focus {
+          border-bottom: 1px solid $color-base;
+          color: $color-base;
+        }
+      }
+    }
+
+    .image {
+      background-position: center;
+      @media (min-width: 576px) {
+        min-height: 15rem;
+      }
+      max-height: 15rem;
+      background-size: contain;
+      background-repeat: no-repeat;
+      min-height: 5.7rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      transition: all 0.5s ease 0s;
+      object-fit: cover;
+      background-size: cover;
+      background-position: center;
+      @media (min-width: 576px) {
+        min-height: 15rem;
+      }
+      background-repeat: no-repeat;
+      -o-object-fit: cover;
+      object-fit: cover;
+      background-size: cover;
+      min-height: 5.7rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      transition: all 0.5s ease 0s;
+
+      &:hover {
+        opacity: 0.7;
+
+        .data {
+          transform: translateY(-1em);
+          transition: transform 0.3s;
+        }
+      }
+    }
+
+    .description {
+      font-size: $typographic-base-font-size;
+      @include line-height(1);
+      @include margin-bottom(0.75);
+    }
+
+    .meta {
+      .time {
+        color: $color-base;
+        font-size: $typographic-small-font-size;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .divider {
+        @include margin(0, 0.5);
+      }
+
+      .category {
+        .link {
+          color: $color-secondary;
+          font-size: $typographic-small-font-size;
+          font-weight: 600;
+          text-transform: uppercase;
+
+          &:hover,
+          &:focus {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+
+    .more {
+      color: $color-primary;
+      font-size: $typographic-base-font-size;
+
+      &:hover,
+      &:focus {
+        border-bottom: 1px solid $color-primary;
+        color: $color-primary;
+      }
+    }
+  }
+}

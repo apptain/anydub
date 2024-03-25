@@ -1,0 +1,42 @@
+{
+  "title": "anydub",
+  "url": "https://anydub.com",
+  "subtitle": "",
+  "copyright": "© All rights reserved.",
+  "googleAnalyticsId":"G-KRWBF2E4TG",
+  "disqusShortname": "",
+  "postsLimit": 4,
+  "pathPrefix": "/",
+  "menu": [
+    {
+      "label": "Articles",
+      "path": "/"
+    },
+    {
+      "label": "About me",
+      "path": "/pages/about"
+    }
+  ],
+  "author": {
+    "name": "anydub",
+    "photo": "/static/media/anydub.png",
+    "bio": "dub anything, keep dubbing",
+    "contacts": {
+      "rss": "",
+      "email": "",
+      "github": "apptain",
+      "facebook": "apptain",
+      "telegram": "",
+      "twitter": "apptain",
+      "linkedin": "apptain",
+      "instagram": "apptain",
+      "line": "",
+      "weibo": "",
+      "gitlab": "",
+      "medium": "",
+      "youtube": "apptain",
+      "codepen": "",
+      "soundcloud": ""
+    }
+  }
+}

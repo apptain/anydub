@@ -22,16 +22,8 @@ The goal is to teach and learn and to open and grow and share how to open and gr
 ## anydub quick technical explanation
 anydub is the best and only functional gatsby 4, netlify cms, and typescript website starter you'll currently find. anydub is a mash up, with a lot of code from  [gatsby-starter-lumen](http://github.com/alxshelepenok/gatsby-starter-lumen), with a jumpstart from @syfxlin/blog, and custom stylized with images inspired from gatsby-calpa-blog along with some other custom feature additions. 
 
-## anydub manifesto - agile manifesto
-
-<h4 align="center">
-  Individuals and interactions over processes and tools
-</h4>
-<sub>so don't get caught up in the tool, but instead the function. We learn with tools, but we get work done understanding eachother</sub>
-<sub>and don't make a big deal about what doesn't have to be a big deal<sub> - with agile
-
-
 ## anydub tech stack
+
 easy automated builds and staticly generated sites , the netlify jamstack CMS is the most valuable and flexible piece of software being demonstrated. A lightweight, configuration based, react CMS that uses a git repo in lieu of database and for source control 
 
 This app is built with gatsby, netlify cms, react javascript, node, graphql, netlify jamstack cms, jamstack, and git. Look ma, no database!

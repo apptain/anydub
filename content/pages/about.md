@@ -11,8 +11,6 @@ socialImage: "/media/anydub.png"
 
 anydub is a starter and demo you can follow to get a fast free-o-f-n-cheap-af website up in one hour fast if you own a website domain name. 
 
-Make money off google's robot because it's making money off you. 
-
 ## apptain - splainin sum stuff
 apptain and is a vlog about building a vlog. 
 

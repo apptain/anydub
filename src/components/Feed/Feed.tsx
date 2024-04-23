@@ -12,7 +12,6 @@ type Props = {
 };
 
 const Feed: React.FC<Props> = ({ edges }: Props) => {
-  console.log(`${edges[0].node.frontmatter.socialImage}`);
   return (
     <div className={styles.feed}>
       {edges.map(edge => (
